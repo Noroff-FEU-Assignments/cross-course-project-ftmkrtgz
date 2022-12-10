@@ -1,4 +1,3 @@
-# cross-course-project-ftmkrtgz
 
 cross-course-project-ftmkrtgz created by GitHub Classroom
 
