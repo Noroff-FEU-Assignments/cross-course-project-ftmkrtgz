@@ -6,4 +6,4 @@ cross-course-project-ftmkrtgz created by GitHub Classroom
 
  Nororff WEb and Communications technology modul.
  
-** https://sucuri.net/guides/website-security/
+`https://sucuri.net/guides/website-security/`
