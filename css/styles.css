@@ -66,13 +66,13 @@ ul{
         font-size: 2.2vw;
         line-height: 2.64vw;
         text-align: left;
-        padding-left: 50px;
+        padding-left:3.47vw ;
         padding-bottom: 2.5vw;
     }
     button{
         color: white;
         background-color: red;
-        font-size: 1.67vw;
+        font-size: 2.5vw;
         border-radius: 7px;
         border: 5px solid red ;
     }
