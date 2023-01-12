@@ -225,8 +225,7 @@ button{
     text-align: center;
 line-height: 10px;}
     }
-    
-        
+      
 @media all and (max-width: 455px){
     .icons{
     display:none
