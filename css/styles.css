@@ -4,26 +4,25 @@
     box-sizing: border-box;
     width: auto;
     margin: 0;
-    font-size: 1.7vw;
 }
 .navbar{
-    margin:8px;
+    width:100%;
+    height: auto;
+    margin:5px;
     display: flex;
     justify-content: space-around;
-    height: 55px;
-    width:auto;
     align-items: center;
-    font-size:1vw;
+    font-size: 1.5rem;
 }
 ul{
     list-style-type: none ;
 }
 .list-item, .icons li{
     display:inline-block ;
-    padding-left: 1vw;
+    margin-left: 40px;
 }
-    .logo-img{
-    height:65px
+.logo-img{
+    height:65px;
 }
 .navbar a,.about-contact a{
     color:black;
@@ -42,11 +41,13 @@ ul{
     color:white;
 }
 main{
+    width: 100%;
+    height: auto;
     background-color: black;
     color: white;
 }
 .container{
-    width: auto;
+    width: 100%;
     height: auto;
     display:flex;
     justify-content:space-between;
@@ -54,9 +55,9 @@ main{
     padding-right: 50px;
 }
 .content{
-    margin:auto 70px;
     width:50%;
     height:auto;
+    margin:auto 3.5vw;
     text-align: center; 
 }
 .content h1{
@@ -83,10 +84,17 @@ button{
     max-height:100%;
     border-radius: 15px;
 }
+.most-popular, .recently{
+    width:100%;
+    height:auto;
+    margin-top:15px;
+    font-size: 1.5vw;
+    
+}
 .popular-header, .recently-header{
     margin-left:5.6vw;
     margin-bottom: 1.8vw;
-    font-size: 1.5vw;
+    
 }
 .popular-poster, .recently-poster{
     width: 100%;
@@ -96,7 +104,6 @@ button{
 }
 .popular-poster img, .recently-poster img{
     width:95%;
-    height: 23,27vw;
     border-radius: 5px;
 }
 .footer{
@@ -104,15 +111,16 @@ button{
     height:auto;
     display: flex;
     justify-content:space-around;
-    align-items: center;   
+    align-items: center;  
+    font-size: 2vw; 
 }
 .connect{
-    line-height: 2.2vw;
+    line-height: 2.5vw;
     text-align: center;
 }
 .about-contact{
     display:block;
-    line-height: 2.5vw;
+    line-height: 3vw;
     position:relative;
     float:right;
     margin-left:3vw;
@@ -123,8 +131,8 @@ button{
     font-size: 0.9vw;
 }
 .connect i{
-    font-size: 2.8vw;
-    margin-right:0.5vw
+    margin-right:0.5vw;
+    font-size:3.5vw
 }
 .fa-twitter, .fa-facebook{
     color:blue;
@@ -185,7 +193,7 @@ button{
         display: none;
     }
     }
-
+    
 @media all and (max-width: 700px){
     .container{
         display: flex;
@@ -204,7 +212,17 @@ button{
     .cover4, .cover-lion{
         display: none;
     }
+    .about-contact, .connect{
+        font-size:14px;
+        line-height: 20px;
     }
+    .popular-header, .recently-header{font-size: 10px;}
+    .connect i{font-size: 20px;}
+    .content h1{font-size: 14px;}
+    .content p{font-size:12px;
+    text-align: center;}
+    }
+    
         
 @media all and (max-width: 455px){
     .icons{
