@@ -5,7 +5,7 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-size:1.2vw
+    font-size:1.2vw;
 }
 
 .navbar{
@@ -111,6 +111,7 @@ button:hover{background-color: rgb(123, 46, 46);
     width:95%;
     border-radius: 5px;
 }
+footer{overflow: hidden;}
 .footer-end{
     width:100%;
     height:auto;
