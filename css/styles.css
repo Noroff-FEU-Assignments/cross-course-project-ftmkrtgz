@@ -263,7 +263,7 @@ input{width: 83%;}
     justify-content: space-evenly;
     align-items: center;
     margin-top: -5px;
-    transform: translateX(250px);
+    transform: translateX(-900px);
     transition: transform ;
 }
 .close{
@@ -344,7 +344,7 @@ input{width: 83%;}
     }
       
 @media all and (max-width: 455px){
-    .hamburger{margin-left: 55vw;}
+    .hamburger{margin-left: 30vw;}
     .icons{
     display:none
     }
