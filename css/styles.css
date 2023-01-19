@@ -263,7 +263,7 @@ input{width: 83%;}
     justify-content: space-evenly;
     align-items: center;
     margin-top: -5px;
-    transform: translateX(1300px);
+    transform: translateX(250px);
     transition: transform ;
 }
 .close{
