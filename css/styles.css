@@ -378,6 +378,10 @@ margin-top: 3px;
     .cover5, .cover-angel{
         display: none;
     }
+    .content h1{
+        width: 100%;
+        padding-bottom: 2px;
+    }
     }
     
 @media all and (max-width: 700px){
@@ -404,7 +408,7 @@ margin-top: 3px;
     }
     .poster-header{
         font-size: 10px;}
-    .connect i, .film-name h1, .cinema-text{
+    .connect i, .film-name h1, .cinema-text, button{
         font-size: 20px;}
     .content h1{
         font-size: 14px;
@@ -412,7 +416,8 @@ margin-top: 3px;
     .content p, .film-name h2{
         font-size:12px;
         text-align: center;
-        line-height: 10px;}
+        line-height: 14px;
+    padding-bottom: 2px;}
     .film-show{
         font-size:1.9vw;
         display:flex;
@@ -464,4 +469,5 @@ margin-top: 3px;
         font-size: 40px;
         padding-top:20px
     }
+    .content {width: 100%;}
     }
