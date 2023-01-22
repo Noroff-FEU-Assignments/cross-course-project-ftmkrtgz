@@ -281,6 +281,41 @@ input{
     font-size: 12px;
     font-weight: normal;
 }
+/* Checkout Success Page */
+.success{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 70px;
+    font-style: italic;
+}
+
+.fa-circle-check{
+    color:rgb(47, 188, 47);
+    font-size: 100px;
+}
+.success h1{color:red;
+margin-top: 3px;
+}
+.purchased-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.purchased{
+    width: 25%;
+}
+.purchased img{
+    width: 80%;
+    height:80%;
+    border-radius: 5px;
+}
+.continue-shopping{
+    margin-bottom: 80px;
+    margin-left: 34.8vw;
+    font-size: 25px;
+}
 @media all and (max-width:1000px){
 .cover6, .cover-trouble{
     display: none;
@@ -332,6 +367,11 @@ input{
     display:block;
     color:white;
 }
+.success{
+    font-size: 20px;
+}
+
+.purchased{width: 40%;}
 }
 
 @media all and (max-width:800px){
@@ -389,7 +429,7 @@ input{
         align-self: center;
         font-size:10px
 }
-    .cinema-text{
+    .cinema-text, .continue-shopping{
         font-size: 16px;}
     .contact-container{
         max-width: 100%;
@@ -407,6 +447,7 @@ input{
         left:13%    
     } 
     .contact-form{align-self: initial;}
+    
 }
     
       
