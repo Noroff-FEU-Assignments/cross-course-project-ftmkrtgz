@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Log In</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/ce1b7138a5.js"
@@ -16,7 +16,7 @@
       <section class="navbar">
         <div class="logo">
           <a href="index.html"
-            ><img class="logo-img" src="images/Group 5.png" alt="logo"
+            ><img class="logo-img" src="images/logo.png" alt="logo"
           /></a>
         </div>
         <div class="menu-name">
@@ -52,12 +52,76 @@
         <a class="close" href="#"><i class="fa-solid fa-xmark"></i></a>
       </section>
     </header>
-    <main></main>
+    <main>
+      <div class="login-container">
+        <div class="register">
+          <label for="login">
+            <input id="login" name="log in" type="button" value="Log in"
+          /></label>
+          <label for="signup">
+            <input id="signup" name="sign up" type="button" value="Sign Up"
+          /></label>
+          <label for="order-login">
+            <input
+              id="order-login"
+              name="Order without Login"
+              type="button"
+              value="Order without Login"
+          /></label>
+        </div>
+        <div class="choose">
+          <label for="email-circle">
+            <input
+              type="radio"
+              name="E-mail-Telefon"
+              id="email-circle"
+              class="inline"
+            />E-mail
+          </label>
+          <label for="tel-circle">
+            <input
+              type="radio"
+              name="E-mail-Telefon"
+              id="tel-circle"
+              class="inline"
+            />Telefon
+          </label>
+        </div>
+        <label for="write-email">
+          <input
+            type="email"
+            name="E-mail"
+            id="write-email"
+            placeholder="E-mail adress"
+            class="size"
+          />
+        </label>
+        <label for="password">
+          <input
+            type="password"
+            name="Password"
+            id="password"
+            placeholder="Password"
+            class="size"
+          />
+        </label>
+        <label for="remember">
+          <input
+            type="checkbox"
+            name="rememberme"
+            id="remember"
+            class="inline"
+          />Remember me
+          <span class="forgot">Forgot my password</span>
+        </label>
+        <button class="log">LOG IN</button>
+      </div>
+    </main>
     <footer>
       <section class="footer-end">
         <div class="logo-footer">
           <a href="index.html"
-            ><img class="logo-img" src="images/Group 5.png" alt="logo"
+            ><img class="logo-img" src="images/logo.png" alt="logo"
           /></a>
           <div class="about-contact">
             <ul>
