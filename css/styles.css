@@ -445,7 +445,6 @@ input{
 .log{
     margin-top: 90px;
     margin-bottom: 190px;
-    width: 15%;
     font-size: 25px;
 }
 
@@ -455,7 +454,6 @@ input{
     font-size:14px
 }
 .sign{
-    width: 200px;
     margin-top: 50px;
     margin-bottom: 150px;
     font-size: 25px;
@@ -482,7 +480,7 @@ input{
 .without-order{
     font-size: 25px; 
     margin-top: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 190px;
 } 
 #login2, #signup2{
     background-color: #002140;
@@ -684,11 +682,8 @@ input{
     }
      .log{
         margin-top: 60px;
-        width:100px
     }   
-    .sign{
-        width: 120px;
-    }
+    
     .login-container{
         padding-top: 100px;
     }
@@ -745,7 +740,7 @@ input{
     .log{
         margin-top: 40px;
     }
-    .without-order, .information{
+    .without-order, .information, .log, .sign{
         font-size: 16px;
     }
 }
