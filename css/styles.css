@@ -37,7 +37,7 @@ ul{
 .menu-name a:hover, .fa-cart-shopping:hover, .fa-magnifying-glass:hover{
     color:gray
 }
-.hamburger, .close{
+.hamburger, .close, .small{
     display: none;
 }
 .fa-xmark{
@@ -614,6 +614,12 @@ margin-bottom: 150px;}
     .icons{
         display:none
     }
+    .small{
+        width:100%;
+        display: block;
+        text-align: center;
+    margin-right: -55vw;}
+    .small a{padding-right: 9.9vw;}
     .buy, .payment{
         font-size: 18px
     }
