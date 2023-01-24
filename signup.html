@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log In</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/ce1b7138a5.js"
@@ -55,47 +55,32 @@
     <main>
       <div class="login-container">
         <div class="register">
-          <label for="login">
-            <a href="login.html">
-              <input id="login" name="log in" type="button" value="Log in" /></a
+          <label for="login1">
+            <a href="login.html"
+              ><input
+                id="login1"
+                name="log in"
+                type="button"
+                value="Log in" /></a
           ></label>
-          <label for="signup">
-            <a href="signup.html">
-              <input
-                id="signup"
+          <label for="signup1">
+            <a href="signup.html"
+              ><input
+                id="signup1"
                 name="sign up"
                 type="button"
                 value="Sign Up" /></a
           ></label>
-          <label for="order-login">
+          <label for="order-login1">
             <a href="order-login.html">
               <input
-                id="order-login"
+                id="order-login1"
                 name="Order without Login"
                 type="button"
                 value="Order without Login" /></a
           ></label>
         </div>
-        <div class="choose">
-          <label for="email-circle">
-            <input
-              type="radio"
-              name="E-mail-Telefon"
-              id="email-circle"
-              class="inline"
-            />
-            E-mail
-          </label>
-          <label for="tel-circle">
-            <input
-              type="radio"
-              name="E-mail-Telefon"
-              id="tel-circle"
-              class="inline"
-            />
-            Telefon
-          </label>
-        </div>
+
         <label for="write-email">
           <input
             type="email"
@@ -114,18 +99,22 @@
             class="size"
           />
         </label>
-        <div class="box">
-          <label for="remember">
-            <input
-              type="checkbox"
-              name="rememberme"
-              id="remember"
-              class="inline"
-            />Remember me
-            <a href="#"><span class="forgot">Forgot my password</span></a>
+        <label for="telefon">
+          <input
+            type="telefon"
+            name="telefon"
+            id="telefon"
+            placeholder="Telefon"
+            class="size"
+          />
+        </label>
+        <div class="read">
+          <label for="read">
+            <input type="checkbox" name="rememberme" id="read" class="inline" />
+            I have read and approved the privacy policy.
           </label>
         </div>
-        <button class="log">LOG IN</button>
+        <button class="sign">SIGN UP</button>
       </div>
     </main>
     <footer>
