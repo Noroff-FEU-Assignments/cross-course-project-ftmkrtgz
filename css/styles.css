@@ -55,8 +55,6 @@ main{
     height: auto;
     display:flex;
     justify-content:space-between;
-    justify-items: center;
-    padding-right: 50px;
 }
 .content{
     width:50%;
@@ -714,7 +712,7 @@ input{
         padding-right: 9.9vw;
     }
     .logo-img{
-        margin-left: 5px;
+        margin-left: 10px;
     }
     .buy, .payment{
         font-size: 18px
