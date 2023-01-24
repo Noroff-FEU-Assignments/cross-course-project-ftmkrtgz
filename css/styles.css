@@ -448,6 +448,7 @@ input{
     margin-top: 90px;
     margin-bottom: 190px;
     width: 15%;
+    font-size: 25px;
 }
 
 /* Sign Up Page */
@@ -459,6 +460,7 @@ input{
     width: 200px;
     margin-top: 50px;
     margin-bottom: 150px;
+    font-size: 25px;
 }
 #login1, #order-login1{
     background-color: #002140;
@@ -480,7 +482,7 @@ input{
     font-size: 20px;
 }
 .without-order{
-    font-size: 20px; 
+    font-size: 25px; 
     margin-top: 50px;
     margin-bottom: 150px;
 } 
