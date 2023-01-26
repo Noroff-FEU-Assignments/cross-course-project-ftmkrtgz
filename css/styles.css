@@ -17,6 +17,8 @@ a { text-decoration: none;
     justify-content: space-around;
     align-items: center;
     font-size: 2.5vw;
+    position: fixed;
+    background-color: white;
 }
 ul{
     list-style-type: none ;
@@ -49,6 +51,7 @@ main{
     height: auto;
     background-color: black;
     color: white;
+    padding-top: 75px;
 }
 .container{
     width: 100%;
@@ -277,7 +280,6 @@ input{
     padding-left: 1.4vw;
     text-align: initial;
     font-size: 20px;
-    align-self: flex-end;
 }
 #message{
     width:93%;
@@ -480,7 +482,7 @@ input{
 .without-order{
     font-size: 25px; 
     margin-top: 50px;
-    margin-bottom: 350px;
+    margin-bottom: 220px;
 } 
 #login2, #signup2{
     background-color: #002140;
