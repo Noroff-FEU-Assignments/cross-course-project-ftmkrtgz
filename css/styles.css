@@ -23,6 +23,7 @@ a { text-decoration: none;
     font-size: 2.5vw;
     position: fixed;
     background-color: white;
+    z-index: 1;
 }
 ul{
     list-style-type: none ;
@@ -661,11 +662,10 @@ input{
         font-size: 50px;
         position: absolute;
         padding-top: 23px;
-        left:13%    
+        left:13%;
     } 
     .contact-form{
-        align-self: 
-        initial;
+        align-self: initial;
     }
     .checkout{
         font-size: 4vw;
@@ -743,7 +743,7 @@ input{
     .log{
         margin-top: 40px;
     }
-    .without-order, .information, .log, .sign{
+    .without-order, .information, .log, .sign, .button{
         font-size: 16px;
     }
 }
