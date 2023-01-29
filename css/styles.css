@@ -10,7 +10,7 @@ body{
 a { text-decoration: none;
     color:white
 }
-.eror{font-size:0px;
+.eror{font-size:0.5px;
     display: none;
 }
 .navbar{
