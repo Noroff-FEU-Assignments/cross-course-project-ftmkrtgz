@@ -37,7 +37,7 @@ ul{
     text-decoration: none;
 }
 .fa-user,.fa-youtube{
-    color: red;
+    color: #ff0000;
 }
 .menu-name a:hover, .fa-cart-shopping:hover, .fa-magnifying-glass:hover{
     color:gray
