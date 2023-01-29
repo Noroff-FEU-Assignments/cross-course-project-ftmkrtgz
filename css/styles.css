@@ -11,6 +11,7 @@ a { text-decoration: none;
     color:white
 }
 .eror{font-size:0px;
+    display: none;
 }
 .navbar{
     width: 100%;
@@ -79,7 +80,7 @@ main{
     padding-left:3.47vw ;
     padding-bottom: 2.5vw;
 }
-button{
+.button, button{
     color: white;
     background-color: red;
     font-size: 2.5vw;
@@ -87,7 +88,7 @@ button{
     border: 5px solid red ;
     font-weight: bold;
 }
-button:hover{
+.button:hover, button:hover{
     background-color: rgb(123, 46, 46);
     border:5px solid rgb(123, 46, 46) ;
 }
