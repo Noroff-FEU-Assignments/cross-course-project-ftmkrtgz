@@ -148,9 +148,6 @@ main{
     margin-right:0.5vw;
     font-size:2.9vw;
 }
-.connect-block{
-    display: block;
-}
 .fa-twitter, .fa-facebook{
     color:blue;
 }
