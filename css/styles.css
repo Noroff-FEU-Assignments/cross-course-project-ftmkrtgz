@@ -13,6 +13,7 @@ a { text-decoration: none;
 .eror{font-size:12px;
     display: none;
     position: absolute;
+    color:black
 }
 .navbar{
     width: 100%;
