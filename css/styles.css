@@ -42,7 +42,7 @@ ul{
     color: #ff0000;
 }
 .menu-name a:hover, .fa-cart-shopping:hover, .fa-magnifying-glass:hover{
-    color:gray
+    color:rgb(123, 46, 46)
 }
 .hamburger, .close, .small{
     display: none;
