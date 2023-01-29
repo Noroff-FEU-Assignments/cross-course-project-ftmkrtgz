@@ -1,3 +1,15 @@
+:root{
+    --bg-color1:white;
+    --bg-color2:black;
+    --bg-color3:red;
+    --bg-color4:rgb(123, 46, 46);
+    --bg-color5:rgb(58, 57, 57);
+    --bg-color6:rgb(111, 108, 108);
+    --bg-color7:#002140;
+    --bg-color8:#0085ff;
+    --bg-size1:12px;
+    --bg-size2:30px;
+}
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
@@ -8,12 +20,12 @@ body{
     font-size:1.2vw;
 }
 a { text-decoration: none;
-    color:white
+    color:var(--bg-color1)
 }
-.eror{font-size:12px;
+.eror{font-size:var(--bg-size1);
     display: none;
     position: absolute;
-    color:black
+    color:var(--bg-color2)
 }
 .navbar{
     width: 100%;
@@ -23,7 +35,7 @@ a { text-decoration: none;
     align-items: center;
     font-size: 2.5vw;
     position: fixed;
-    background-color: white;
+    background-color: var(--bg-color1);
     z-index: 1;
 }
 ul{
@@ -37,26 +49,26 @@ ul{
     height:65px;
 }
 .navbar a,.about-contact a{
-    color:black;
+    color:var(--bg-color2);
     text-decoration: none;
 }
 .fa-user,.fa-youtube{
-    color: #AD0000;
+    color:var(--bg-color3);
 }
 .menu-name a:hover, .fa-cart-shopping:hover, .fa-magnifying-glass:hover{
-    color:rgb(123, 46, 46)
+    color:gray
 }
 .hamburger, .close, .small{
     display: none;
 }
 .fa-xmark{
-    color:white;
+    color:var(--bg-color1);
 }
 main{
     width: 100%;
     height: auto;
-    background-color: black;
-    color: white;
+    background-color: var(--bg-color2);
+    color: var(--bg-color1);
     padding-top: 75px;
 }
 .container{
@@ -84,19 +96,19 @@ main{
     padding-bottom: 2.5vw;
 }
 .button, button{
-    color: white;
-    background-color: #AD0000;
+    color: var(--bg-color1);
+    background-color: var(--bg-color3);
     font-size: 2.5vw;
     border-radius: 7px;
-    border: 5px solid #AD0000 ;
+    border: 5px solid var(--bg-color3) ;
     font-weight: bold;
 }
 .button:hover, button:hover{
-    background-color: rgb(123, 46, 46);
-    border:5px solid rgb(123, 46, 46) ;
+    background-color: var(--bg-color4);
+    border:5px solid var(--bg-color4) ;
 }
 .fa-user:hover{
-    color:rgb(123, 46, 46)
+    color:var(--bg-color4)
 }
 .batman-poster{
     max-width:100%;
@@ -151,18 +163,18 @@ main{
     font-size:2.9vw;
 }
 .fa-twitter, .fa-facebook{
-    color:#0085ff;
+    color:blue;
 }
 .fa-instagram{
-    color:black
+    color:var(--bg-color2)
 }
 
 /* Films Page */
 
 .kinds{
     width:160px;
-    background-color: rgb(58, 57, 57);
-    border: 5px solid rgb(58,57,57);
+    background-color: var(--bg-color5);
+    border: 5px solid var(--bg-color5);
     text-align: left;
     font-size: 20px;
     margin:70px 0 50px 50px;
@@ -171,8 +183,8 @@ main{
     padding-left: 55px ;
 }
 .kinds:hover{
-    background-color: rgb(111, 108, 108);
-    border:5px solid rgb(111, 108, 108)
+    background-color: var(--bg-color6);
+    border:5px solid var(--bg-color6)
 }
 
 /* Video Page Showing*/
@@ -257,7 +269,7 @@ main{
 }
 .contact-container i{
     font-size: 5.6vw;
-    color:rgb(65, 146, 237)
+    color:var(--bg-color8)
 }
 .mail, .call{
     width:50%
@@ -279,7 +291,7 @@ input{
 .contact-form{
     width:50%;
     height: auto;
-    border: 1px solid white;
+    border: 1px solid var(--bg-color1);
     padding-left: 1.4vw;
     text-align: initial;
     font-size: 20px;
@@ -295,7 +307,7 @@ input{
     margin:30px  auto;   
 }
 .note{
-    font-size: 12px;
+    font-size: var(--bg-size1);
     font-weight: normal;
 }
 
@@ -304,7 +316,7 @@ input{
 .success{
     width: 100%;
     text-align: center;
-    font-size: 30px;
+    font-size: var(--bg-size2);
     padding-top: 70px;
     font-style: italic;
 }
@@ -313,7 +325,7 @@ input{
     font-size: 100px;
 }
 .success h1{
-    color:red;
+    color:var(--bg-color3);
     margin-top: 3px;
 }
 .purchased-container{
@@ -340,13 +352,13 @@ input{
 
 .checkout{
     width:90%;
-    font-size: 30px;
+    font-size: var(--bg-size2);
     margin-left: 4.2vw;
-    padding-top: 30px;
+    padding-top: var(--bg-size2);
 }
 .checkout .fa-cart-shopping{
     margin-left: 15vw;
-    color:rgb(65, 146, 237);
+    color:var(--bg-color8);
     font-size: 50px;
 }
 .checkout h1, .checkout h3{
@@ -383,18 +395,18 @@ input{
     grid-template-rows: auto auto;
     text-align: center;
     margin-left: 14vw;
-    margin-bottom: 30px;
+    margin-bottom: var(--bg-size2);
 }
 .payment, .total{
-    font-size:30px;
+    font-size:var(--bg-size2);
     font-weight: bolder;
 }
 
 /* Log In Page */
 
 .inline{
-    width: 30px;
-    height: 30px;
+    width: var(--bg-size2);
+    height: var(--bg-size2);
 }
 .login-container{
     padding-top:150px; 
@@ -402,24 +414,24 @@ input{
 }
 .register input, .register label, .choose label{
    height: 60px;
-    font-size: 30px;
+    font-size: var(--bg-size2);
     border-radius: 5px;
-    color:white
+    color:var(--bg-color1)
 }
 .register{
     display: grid;
     grid-template-columns: 25% 25% 40%;
     justify-content: center;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: var(--bg-size2);
 }
 #login{
-    background-color: #0085ff;
-    border: 1px solid #0085ff
+    background-color: var(--bg-color8);
+    border: 1px solid var(--bg-color8)
 }
 #signup, #order-login{
-    background-color: #002140;
-    border:1px solid  #002140
+    background-color: var(--bg-color7);
+    border:1px solid  var(--bg-color7)
 }
 .choose{
     display: grid;
@@ -428,8 +440,8 @@ input{
 }
 .size{
     width:40%; 
-    height: 30px;
-    margin-bottom: 30px;  
+    height: var(--bg-size2);
+    margin-bottom: var(--bg-size2);  
     border-radius: 5px;  
 }
 .box{
@@ -444,8 +456,8 @@ input{
     color: gray;
 }
 #signup:hover, #order-login:hover{
-    background-color: #0085ff;
-    border: 1px solid #0085ff
+    background-color: var(--bg-color8);
+    border: 1px solid var(--bg-color8)
 }
 .log{
     margin-top: 90px;
@@ -464,16 +476,16 @@ input{
     font-size: 25px;
 }
 #login1, #order-login1{
-    background-color: #002140;
-    border:1px solid  #002140
+    background-color: var(--bg-color7);
+    border:1px solid  var(--bg-color7)
 }
 #signup1{
-    background-color: #0085ff;
-    border: 1px solid #0085ff
+    background-color: var(--bg-color8);
+    border: 1px solid var(--bg-color8)
 }
 #login1:hover, #order-login1:hover{
-    background-color: #0085ff;
-    border: 1px solid #0085ff
+    background-color: var(--bg-color8);
+    border: 1px solid var(--bg-color8)
 }    
 
     /*Order Without Login Page  */
@@ -488,16 +500,16 @@ input{
     margin-bottom: 220px;
 } 
 #login2, #signup2{
-    background-color: #002140;
-    border:1px solid  #002140
+    background-color:var(--bg-color7);
+    border:1px solid  var(--bg-color7)
 }
 #order-login2{
-    background-color: #0085ff;
-    border: 1px solid #0085ff
+    background-color: var(--bg-color8);
+    border: 1px solid var(--bg-color8)
 }
 #login2:hover, #signup2:hover{
-    background-color: #0085ff;
-    border: 1px solid #0085ff
+    background-color: var(--bg-color8);
+    border: 1px solid var(--bg-color8)
 }       
 
 @media all and (max-width:1000px){
@@ -530,7 +542,7 @@ input{
         width:200px;
         height:400px;
         overflow:hidden;
-        background-color: black;
+        background-color: var(--bg-color2);
         display: flex;
         flex-flow: column;
         justify-content: space-evenly;
@@ -552,7 +564,7 @@ input{
     }   
     .list-item a{
         display:block;
-        color:white;
+        color:var(--bg-color1);
     }
     .success{
         font-size: 20px;
@@ -617,10 +629,10 @@ input{
     }
     .content h1{
         font-size: 14px;
-        line-height: 12px;
+        line-height: var(--bg-size1);
     }
     .content p, .film-name h2{
-        font-size:12px;
+        font-size:var(--bg-size1);
         text-align: center;
         line-height: 14px;
         padding-bottom: 2px;
