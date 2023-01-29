@@ -84,10 +84,10 @@ main{
 }
 .button, button{
     color: white;
-    background-color: red;
+    background-color: #AD0000;
     font-size: 2.5vw;
     border-radius: 7px;
-    border: 5px solid red ;
+    border: 5px solid #AD0000 ;
     font-weight: bold;
 }
 .button:hover, button:hover{
