@@ -10,8 +10,9 @@ body{
 a { text-decoration: none;
     color:white
 }
-.eror,a i .eror{font-size:10px;
+.eror{font-size:12px;
     display: none;
+    position: absolute;
 }
 .navbar{
     width: 100%;
