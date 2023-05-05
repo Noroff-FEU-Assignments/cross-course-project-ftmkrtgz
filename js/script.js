@@ -11,7 +11,7 @@ async function fetchMovies() {
     try {
         const response = await fetch(url);
         const json = await response.json();
-
+        
         resultsContainer.innerHTML = "";
 
         for (let i = 0; i < json.length; i++) {
