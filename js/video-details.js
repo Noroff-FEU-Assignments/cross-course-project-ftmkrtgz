@@ -1,0 +1,42 @@
+const detailContainer = document.querySelector(".movie-details");
+
+const queryString = document.location.search;
+
+const params = new URLSearchParams(queryString);
+
+const id = params.get("id");
+
+const url = "https://api.noroff.dev/api/v1/square-eyes/" + id + "?key=352ba432-5b5d-4ccc-9aba-f2704c500cf3";
+
+async function fetchMovie() {
+
+    try {
+        const response = await fetch(url);
+        const details = await response.json();
+        createHtml(details);
+      
+    }
+    catch(error) {
+        console.log(error);
+        detailContainer.innerHTML = message("error", error);
+    }
+    
+}
+
+fetchMovie();
+
+function createHtml(details) {
+    detailContainer.innerHTML = `<div class="film-show" style="background-image: url('${details.image}')">
+                                 <div class="film-name"><h1>${details.title}</h1>
+                                    <button class="buy">
+                                        <a href="checkout-page.html">BUY</a>
+                                    </button>
+                                 </div>
+                                 <div class="trailer">
+                                    <h3><i class="fa-brands fa-imdb"></i> ${details.rating} | ${details.genre} | ${details.released}</h3>
+                                        <p>${details.description}<br />
+                                            <span class="price">${details.price} $</span>
+                                        </p>
+                                 </div>
+                                 </div>`;
+}
