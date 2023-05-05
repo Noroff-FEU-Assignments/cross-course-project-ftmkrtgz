@@ -17,7 +17,6 @@ async function fetchMovie() {
       
     }
     catch(error) {
-        console.log(error);
         detailContainer.innerHTML = message("error", error);
     }
     

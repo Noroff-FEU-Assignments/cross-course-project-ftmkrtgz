@@ -41,7 +41,6 @@ async function fetchMovies() {
         }
     }
     catch (error) {
-            console.log(error);
             postersMenu.innerHTML = message("error", error);
         }
     }
