@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Exo+2:700i|Open+Sans:400,400i,600,700&display=swap");
+
 :root {
     --primary-colour: #b3193d;
     --grey: #242424;
@@ -9,9 +9,9 @@
 
 
 .error{
-    border: 1px solid #b3193d;
-    color:#b3193d;
-    background:#242424;
+    border: 1px solid var(--primary-colour);
+    color:var(--primary-colour);
+    background:var(--grey);
     padding: 1em;
     font-size: 16px;
     text-align: center;

@@ -193,24 +193,28 @@ main{
 
 /* Video Page Showing*/
 
+.movie-details{
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content:space-around;
+    text-align: center;
+}
+
 .film-show{
-    height: 700px;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+    width:40%;
+    height:600px;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    align-items:flex-end; 
-    background-position: center;
 }
 .film-name{
-    width: 30%;
+    width: 40%;
     height: auto; 
-    padding-bottom: 9vw;  
+    margin-top: 20px;  
+    text-align: center;
 }
 .film-name h1{
-    font-size: 3.82vw; 
+    font-size: 40px; 
 }
 .buy{
     width: 12vw;
@@ -220,10 +224,10 @@ main{
     font-weight: bold;
 }
 .trailer{
-    width: 40%;
+    width: 90%;
     height:auto;
     text-align: left;
-    padding-bottom: 8vw;
+    margin-top: 100px;
 }
 
 /* About Page */
