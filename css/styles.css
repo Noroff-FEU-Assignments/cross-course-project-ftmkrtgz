@@ -219,9 +219,16 @@ main{
 .buy{
     width: 12vw;
 }
-.price{
+.price, .discountprice{
     font-size: 35px;
     font-weight: bold;
+}
+.discountprice{
+    color:red
+}
+.discountperiod{
+    color:red;
+    font-size: 20px;
 }
 .trailer{
     width: 90%;
@@ -270,7 +277,7 @@ main{
 .contact-us{
     padding-left:15px
 }
-.contact-container i{
+.fa-envelope, .fa-phone, .fa-location-dot{
     font-size: 5.6vw;
     color:var(--bg-color8)
 }
@@ -298,6 +305,11 @@ input{
     padding-left: 1.4vw;
     text-align: initial;
     font-size: 20px;
+}
+#checkin,.fa-check, #checkin2{
+    font-size:25px;
+    color:rgb(53, 189, 53); 
+    display: none;
 }
 #message{
     width:93%;
@@ -515,6 +527,12 @@ input{
     border: 1px solid var(--bg-color8)
 }       
 
+.form-error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
 @media all and (max-width:1000px){
     .cover6, .cover-trouble{
         display: none;
@@ -674,7 +692,7 @@ input{
     .contact-form{
         width: 80%;
     }
-    .contact-container i{
+    .fa-envelope, .fa-phone, .fa-location-dot{
         font-size: 50px;
         position: absolute;
         padding-top: 23px;
