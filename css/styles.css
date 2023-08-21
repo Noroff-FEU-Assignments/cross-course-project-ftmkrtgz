@@ -1,0 +1,765 @@
+@import "ui.css";
+:root{
+    --bg-color1:white;
+    --bg-color2:black;
+    --bg-color3:red;
+    --bg-color4:rgb(123, 46, 46);
+    --bg-color5:rgb(58, 57, 57);
+    --bg-color6:rgb(111, 108, 108);
+    --bg-color7:#002140;
+    --bg-color8:#0085ff;
+    --bg-size1:12px;
+    --bg-size2:30px;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size:1.2vw;
+}
+a { text-decoration: none;
+    color:var(--bg-color1)
+}
+.eror{font-size:var(--bg-size1);
+    display: none;
+    position: absolute;
+    color:var(--bg-color2)
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2.5vw;
+    position: fixed;
+    background-color: var(--bg-color1);
+    z-index: 1;
+}
+ul{
+    list-style-type: none ;
+}
+.list-item, .icons li{
+    display:inline-block ;
+    margin-left: 40px;
+}
+.logo-img{
+    height:65px;
+}
+.navbar a,.about-contact a{
+    color:var(--bg-color2);
+    text-decoration: none;
+}
+.fa-user,.fa-youtube{
+    color:var(--bg-color3);
+}
+.menu-name a:hover, .fa-cart-shopping:hover, .fa-magnifying-glass:hover{
+    color:var(--bg-color4)
+}
+.hamburger, .close, .small{
+    display: none;
+}
+.fa-xmark{
+    color:var(--bg-color1);
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-color2);
+    color: var(--bg-color1);
+    padding-top: 75px;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content:space-between;
+}
+.content{
+    width:50%;
+    height:auto;
+    margin:auto 3.5vw;
+    text-align: center; 
+}
+.content h1{
+    font-size: 3.194vw;
+    line-height: 3.89vw;
+    padding-bottom: 2.5vw;
+}
+.content p{
+    font-size: 2.2vw;
+    line-height: 2.64vw;
+    text-align: left;
+    padding-left:3.47vw ;
+    padding-bottom: 2.5vw;
+}
+.button, button{
+    color: var(--bg-color1);
+    background-color: var(--bg-color3);
+    font-size: 2.5vw;
+    border-radius: 7px;
+    border: 5px solid var(--bg-color3) ;
+    font-weight: bold;
+}
+.button:hover, button:hover{
+    background-color: var(--bg-color4);
+    border:5px solid var(--bg-color4) ;
+}
+.fa-user:hover{
+    color:var(--bg-color4)
+}
+.batman-poster{
+    max-width:100%;
+    max-height:100%;
+    border-radius: 15px;
+}
+.posters-menu{
+    width:100%;
+    height:auto;
+    margin-top:15px;
+    font-size: 1.5vw;   
+}
+.poster-header{
+    margin-left:5.6vw;
+    margin-bottom: 1.8vw; 
+}
+.posters, .posters-drama, .posters-kids{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: space-around;
+}
+.posters-image, .posters img{
+    width:100%;
+    max-height: 400px;
+    border-radius: 5px; 
+}
+.footer-end{
+    width:100%;
+    height:auto;
+    padding-top: 5px;
+    display: flex;
+    justify-content:space-around; 
+    align-items: center;
+    font-size: 2vw;  
+}
+.logo-footer{
+    display: flex;
+    justify-content: space-around;
+}
+.logo-footer img{
+    margin-top: 1.15vw;
+}
+.copy{
+    display: block;
+    text-align: center;
+    font-size: 1.1vw;
+}
+.connect i{
+    margin-top: 5px;
+    margin-right:0.5vw;
+    font-size:2.9vw;
+}
+.connect-font{
+    display: block;
+}
+.fa-twitter, .fa-facebook{
+    color:blue;
+}
+.fa-instagram{
+    color:var(--bg-color2)
+}
+
+/* Films Page */
+
+.kinds{
+    width:160px;
+    background-color: var(--bg-color5);
+    border: 5px solid var(--bg-color5);
+    text-align: left;
+    font-size: 20px;
+    margin:70px 0 50px 50px;
+}
+.fa-chevron-down{
+    padding-left: 55px ;
+}
+.kinds:hover{
+    background-color: var(--bg-color6);
+    border:5px solid var(--bg-color6)
+}
+
+/* Video Page Showing*/
+
+.movie-details{
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content:space-around;
+    text-align: center;
+}
+
+.film-show{
+    width:40%;
+    height:600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.film-name{
+    width: 40%;
+    height: auto; 
+    margin-top: 20px;  
+    text-align: center;
+}
+.film-name h1{
+    font-size: 40px; 
+}
+.buy{
+    width: 12vw;
+}
+.price{
+    font-size: 35px;
+    font-weight: bold;
+}
+.trailer{
+    width: 90%;
+    height:auto;
+    text-align: left;
+    margin-top: 100px;
+}
+
+/* About Page */
+
+.about-us, .contact-us{
+    text-align: left;
+    padding-top: 0;
+}
+.cinema{
+    width: 100%;
+    height:700px;  
+    background-image: url("/images/cinema.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 5.6vw;
+}
+.cinema-text{
+    font-size: 22px;
+    padding:0 20px;
+}
+
+/* Contact Us Page*/
+
+.contact-container{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding:40px 0;
+    font-size: 22px;
+}
+.contact-header{
+    width: 100%;   
+}
+.contact-us{
+    padding-left:15px
+}
+.contact-container i{
+    font-size: 5.6vw;
+    color:var(--bg-color8)
+}
+.mail, .call{
+    width:50%
+}
+.adress{
+    width:50%
+}
+.map{
+    width:60%;
+    height:auto;
+    border-radius: 5px;
+}
+label{
+    display: block;
+}
+input{
+    width: 93%;
+}
+.contact-form{
+    width:50%;
+    height: auto;
+    border: 1px solid var(--bg-color1);
+    padding-left: 1.4vw;
+    text-align: initial;
+    font-size: 20px;
+}
+#message{
+    width:93%;
+}
+#submit{
+    width:100px;
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    margin:30px  auto;   
+}
+.note{
+    font-size: var(--bg-size1);
+    font-weight: normal;
+}
+
+/* Checkout Success Page */
+
+.success{
+    width: 100%;
+    text-align: center;
+    font-size: var(--bg-size2);
+    padding-top: 70px;
+    font-style: italic;
+}
+.fa-circle-check{
+    color:rgb(47, 188, 47);
+    font-size: 100px;
+}
+.success h1{
+    color:var(--bg-color3);
+    margin-top: 3px;
+}
+.purchased-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.purchased{
+    width: 25%;
+}
+.purchased img{
+    width: 80%;
+    height:80%;
+    border-radius: 5px;
+}
+.continue-shopping{
+    margin-bottom: 80px;
+    margin-left: 34.8vw;
+    font-size: 25px;
+}
+
+/* Checkout Page*/
+
+.checkout{
+    width:90%;
+    font-size: var(--bg-size2);
+    margin-left: 4.2vw;
+    padding-top: var(--bg-size2);
+}
+.checkout .fa-cart-shopping{
+    margin-left: 15vw;
+    color:var(--bg-color8);
+    font-size: 50px;
+}
+.checkout h1, .checkout h3{
+    font-weight: lighter;
+}
+.checkout h1{
+    margin-top: 5px;
+}
+.buying-container{
+    width:100%;
+    height:40%;
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    font-size: 23px;
+    grid-row-gap: 20px;
+}
+.buying1, .buying2{
+    width:100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 20% 35% 10%;
+    align-items: center;
+    text-align: center;   
+}
+.buying1 img, .buying2 img{
+    width: 80%;
+    border-radius: 5px;
+    margin-left:5.6vw
+}
+.pay-end{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: auto auto;
+    text-align: center;
+    margin-left: 14vw;
+    margin-bottom: var(--bg-size2);
+}
+.payment, .total{
+    font-size:var(--bg-size2);
+    font-weight: bolder;
+}
+
+/* Log In Page */
+
+.inline{
+    width: var(--bg-size2);
+    height: var(--bg-size2);
+}
+.login-container{
+    padding-top:150px; 
+    text-align: center;
+}
+.register input, .register label, .choose label{
+   height: 60px;
+    font-size: var(--bg-size2);
+    border-radius: 5px;
+    color:var(--bg-color1)
+}
+.register{
+    display: grid;
+    grid-template-columns: 25% 25% 40%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: var(--bg-size2);
+}
+#login{
+    background-color: var(--bg-color8);
+    border: 1px solid var(--bg-color8)
+}
+#signup, #order-login{
+    background-color: var(--bg-color7);
+    border:1px solid  var(--bg-color7)
+}
+.choose{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: center;
+}
+.size{
+    width:40%; 
+    height: var(--bg-size2);
+    margin-bottom: var(--bg-size2);  
+    border-radius: 5px;  
+}
+.box{
+    width: 100%;
+    font-size: 20px;
+}
+.forgot{
+    display: inline-block;
+    margin-left: 7vw;
+}
+.forgot:hover{
+    color: gray;
+}
+#signup:hover, #order-login:hover{
+    background-color: var(--bg-color8);
+    border: 1px solid var(--bg-color8)
+}
+.log{
+    margin-top: 90px;
+    margin-bottom: 190px;
+    font-size: 25px;
+}
+
+/* Sign Up Page */
+
+.read{
+    font-size:14px
+}
+.sign{
+    margin-top: 50px;
+    margin-bottom: 150px;
+    font-size: 25px;
+}
+#login1, #order-login1{
+    background-color: var(--bg-color7);
+    border:1px solid  var(--bg-color7)
+}
+#signup1{
+    background-color: var(--bg-color8);
+    border: 1px solid var(--bg-color8)
+}
+#login1:hover, #order-login1:hover{
+    background-color: var(--bg-color8);
+    border: 1px solid var(--bg-color8)
+}    
+
+    /*Order Without Login Page  */
+
+.information{
+    font-weight: lighter;
+    font-size: 20px;
+}
+.without-order{
+    font-size: 25px; 
+    margin-top: 50px;
+    margin-bottom: 220px;
+} 
+#login2, #signup2{
+    background-color:var(--bg-color7);
+    border:1px solid  var(--bg-color7)
+}
+#order-login2{
+    background-color: var(--bg-color8);
+    border: 1px solid var(--bg-color8)
+}
+#login2:hover, #signup2:hover{
+    background-color: var(--bg-color8);
+    border: 1px solid var(--bg-color8)
+}       
+
+@media all and (max-width:1000px){
+    .cover6, .cover-trouble{
+        display: none;
+    }
+    .film-show{
+        font-size: 1.6vw;
+    }
+    .buying1, .buying2{
+        grid-template-columns: 35% 48% 10%;
+    }
+}
+
+@media all and (max-width: 820px) {
+    .navbar{
+        font-size:25px
+    }
+    .hamburger{
+        display: flex;   
+    }
+    .navbar-list{
+        display:none
+    }
+    #navbar-list-hamburger{
+        position:absolute;
+        z-index:1000;
+        top:0;
+        right:0;
+        width:200px;
+        height:400px;
+        overflow:hidden;
+        background-color: var(--bg-color2);
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: -5px;
+        transform: translateX(-900px);
+        transition: transform ;
+    }
+    .close{
+        display:flex;
+        z-index:1001;
+        align-self: start;
+    }
+    #navbar-list-hamburger:target{
+        transform:translateX(0)
+    }
+    .logo-img{
+        height:50px
+    }   
+    .list-item a{
+        display:block;
+        color:var(--bg-color1);
+    }
+    .success{
+        font-size: 20px;
+    }
+    .purchased{
+        width: 40%;
+    }
+    .pay-end{
+        grid-template-columns: 60% 50%;
+    }
+    }
+
+@media all and (max-width:800px){
+    .cover5, .cover-angel{
+        display: none;
+    }
+    .content h1{
+        width: 100%;
+        padding-bottom: 2px;
+    }
+    
+    .total{
+        grid-column: 1/2;
+        grid-column: 1;
+    }
+    .payment{grid-row: 2;
+        grid-column: 2;
+        justify-self: end;
+    }
+    .register input, .register label, .choose label{
+        font-size: 24px;
+    }
+}
+    
+@media all and (max-width: 700px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:center;
+        padding-right: initial;
+    }
+    .batman-poster{
+        width:100%;
+        height:400px;
+    }
+    .content{
+        margin:initial;
+        align-self: center;
+    }
+    .cover4, .cover-lion{
+        display: none;
+    }
+    .about-contact, .connect{
+        font-size:14px;
+        line-height: 20px;
+    }
+    .poster-header{
+        font-size: 10px;
+    }
+    .connect i, .film-name h1, .cinema-text, button{
+        font-size: 20px;
+    }
+    .content h1{
+        font-size: 14px;
+        line-height: var(--bg-size1);
+    }
+    .content p, .film-name h2{
+        font-size:var(--bg-size1);
+        text-align: center;
+        line-height: 14px;
+        padding-bottom: 2px;
+    }
+    .film-show{
+        font-size:1.9vw;
+        display:flex;
+        flex-direction: column;
+    }
+    .film-name{
+        width:60%;   
+    }
+    .buy{
+        width:100px; 
+        font-size:16px
+    }
+    .trailer{
+        width:95%;
+        align-self: center;
+        font-size:10px
+    }
+    .cinema-text, .continue-shopping{
+        font-size: 16px;
+    }
+    .contact-container{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2px;
+        font-size: 20px;
+    }  
+    .mail, .call, .adress{
+        width: 100%;
+    }
+    .contact-form{
+        width: 80%;
+    }
+    .contact-container i{
+        font-size: 50px;
+        position: absolute;
+        padding-top: 23px;
+        left:13%;
+    } 
+    .contact-form{
+        align-self: initial;
+    }
+    .checkout{
+        font-size: 4vw;
+    }
+    .buying1, .buying2{
+        font-size: 3.8vw;
+    }
+    .payment, .price{
+        font-size: 25px;
+    }
+    .register input, .register label, .choose label{
+        font-size: 18px;
+    }
+    .inline{
+        width:20px;
+        height:20px
+    }
+     .log{
+        margin-top: 60px;
+    }   
+    
+    .login-container{
+        padding-top: 100px;
+    }
+}
+
+      
+@media all and (max-width: 455px){
+    .hamburger{
+        margin-left: 50vw;
+    }
+    .icons{
+        display:none
+    }
+    .small{
+        width:100%;
+        display: block;
+        text-align: center;
+        margin-right: -55vw;
+    }
+    .small a{
+        padding-right: 9.9vw;
+    }
+    .logo-img{
+        margin-left: 10px;
+    }
+    .buy, .payment{
+        font-size: 18px
+    }
+    .cinema-text{
+        font-size: 14px;
+    }
+    .contact-container{
+        font-size: 16px;
+    }
+    .contact-container i{
+        left:5%;
+        font-size: 40px;
+        padding-top:20px
+    }
+    .content{
+        width: 100%;
+    }
+    .register{
+        grid-template-columns: 21% 23% 55%;
+    }
+    .forgot{
+        display: block;
+        position: relative;
+        text-align: center;
+        margin-top:10px}
+    .size{
+        width: 60%;
+    }
+    .log{
+        margin-top: 40px;
+    }
+    .without-order, .information, .log, .sign, .button{
+        font-size: 16px;
+    }
+}
