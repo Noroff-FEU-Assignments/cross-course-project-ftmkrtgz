@@ -7,9 +7,9 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const url = "https://api.noroff.dev/api/v1/square-eyes/" + id + "?key=352ba432-5b5d-4ccc-9aba-f2704c500cf3";
+const url = "https://cors.noroff.dev/www.gulce.no/wp-json/wc/store/products" + "/" + id + "?per_page=100";
 
-async function fetchMovie() {
+async function getSingleProduct() {
 
     try {
         const response = await fetch(url);
@@ -23,19 +23,20 @@ async function fetchMovie() {
     
 }
 
-fetchMovie();
+getSingleProduct();
 
 function createHtml(details) {
-    detailContainer.innerHTML = `<div class="film-show" style="background-image: url('${details.image}')"></div>
-                                 <div class="film-name"><h1>${details.title}</h1>
+    detailContainer.innerHTML = `<div class="film-show" style="background-image:url('${details.images[0].src}')"></div>
+    <div class="film-name"><h1>${details.name}</h1>
                                     <button class="buy">
                                         <a href="checkout-page.html">BUY</a>
                                     </button>
                                  <div class="trailer">
-                                    <h3><i class="fa-brands fa-imdb"></i> ${details.rating} | ${details.genre} | ${details.released}</h3>
+                                 <h3><i class="fa-brands fa-imdb"></i> ${details.attributes[0].terms[0].name} | ${details.categories[0].name} | ${details.attributes[1].terms[0].name}</h3>
                                         <p>${details.description}<br />
-                                            <span class="price">${details.price} $</span>
+                                            <span class="price"> ${details.price_html}</span>
                                         </p>
                                         </div>
-                                 </div>`;
+                                 </div>
+    `
 }

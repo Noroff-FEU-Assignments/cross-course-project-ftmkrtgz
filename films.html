@@ -94,19 +94,19 @@
       </div>
     </header>
     <main>
-      <button class="kinds">
-        Kinds <i class="fa-solid fa-chevron-down"></i>
-      </button>
-      <section class="posters-menu">
-        <div class="poster-header"><h1>Action</h1></div>
-        <div class="posters">
-          <div class="loader"></div>
-        </div>
-        <div class="poster-header"><h1>Drama</h1></div>
-        <div class="posters-drama"></div>
-        <div class="poster-header"><h1>Animation</h1></div>
-        <div class="posters-kids"></div>
-      </section>
+      <div class="categories">
+        <select id="referrer" name="referrer" class="kinds">
+          <option class="category" value="">Kinds</option>
+          <option id="featured" class="category" value="true">Featured</option>
+          <option id="action" class="category" value="16">Action</option>
+          <option id="drama" class="category" value="23">Drama</option>
+          <option id="kids" class="category" value="25">Kids</option>
+          <option id="horror" class="category" value="24">Horror</option>
+          <option id="comedy" class="category" value="22">Comedy</option>
+        </select>
+      </div>
+      <div class="loader"></div>
+      <div class="products"></div>
     </main>
     <footer>
       <div class="footer-end">
