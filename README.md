@@ -7,48 +7,51 @@ cross-course-project-ftmkrtgz created by GitHub Classroom
 
 # Your project title
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![SquareEyes](https://github.com/Noroff-FEU-Assignments/cross-course-project-ftmkrtgz/blob/Cms/images/cross-course1.png)
 
-A simple overview of the use/purpose of the project.
+Created a website for a web shop called Square Eyes in my cross course project in school.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+Square Eyes is a website that offers thousands of entertaining movies and TV series to users.
 
-You can add some bullet points if you'd like to:
+This website which was course-assignment for school in the first year is created with JavaScript, HTML and CSS. Integrated with Wordpress and WooCommerce API.
 
-- List item 1
-- List item 2
-- List item 3
+The user should be easy to manage the site. Be able to add products to the shopping cart, and complete the purchase.
+
+After the user have completed the purchase he will be taken to a purchase complete page, where he is given a receipt and a message that the purchase was complete.
+
+Site architecture:
+
+- Home page
+- Films page (page with the list og films)
+- Video Page Showing page ( showing the specific film the user clicked on)
+- Checkout page
+- A checkout success page
+- About page
+- Contact page
+- Login page
+- Oreder Login page
+- Signup Page
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- Html
+- Css
+- javascript
+- Wordpress Headless Cms
 
 ## Getting Started
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
-1. Clone the repo:
+Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-```
-
-2. Install the dependencies:
-
-```
-npm install
+git clone git@github.com:Noroff-FEU-Assignments/cross-course-project-ftmkrtgz.git
 ```
 
 ### Running
-
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
 
 To run the app, run the following commands:
 
@@ -58,12 +61,8 @@ npm run start
 
 ## Contributing
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+If you would like to contribute to my project - Just make a pull request and push your changes.
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
+[My LinkedIn page](https://www.linkedin.com/in/fatma-kurtgözü-5693aa288)
