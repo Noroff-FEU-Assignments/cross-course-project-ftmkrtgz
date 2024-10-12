@@ -34,6 +34,13 @@ Site architecture:
 - javascript
 - Wordpress Headless Cms
 
+## Project Links
+
+[Deployed website](https://gulce.netlify.app/)
+
+[Github repository](https://github.com/Noroff-FEU-Assignments/cross-course-project-ftmkrtgz/tree/Cms)
+
+
 ## Getting Started
 
 ### Installing
@@ -57,5 +64,7 @@ npm run start
 If you would like to contribute to my project - Just make a pull request and push your changes.
 
 ## Contact
+
+[My Portfolio Page](https://fatma-krtgz.netlify.app/)
 
 [My LinkedIn page](https://www.linkedin.com/in/fatma-kurtgözü-5693aa288)
